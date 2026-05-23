@@ -1,0 +1,67 @@
+{
+  "name": "my-safe-file",
+  "version": "1.0.0",
+  "description": "Encrypted text editor",
+  "author": {
+    "name": "joaocrleite",
+    "email": "joao@amigo.app"
+  },
+  "homepage": "https://github.com/joaocrleite/my-safe-file",
+  "main": "out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev -- --no-sandbox",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "dist:linux": "electron-vite build && electron-builder --linux",
+    "dist:mac":   "electron-vite build && electron-builder --mac",
+    "dist:win":   "electron-vite build && electron-builder --win"
+  },
+  "build": {
+    "appId": "com.joaocrleite.my-safe-file",
+    "productName": "My Vault",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "out/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "./my-safe-file",
+        "to": "my-safe-file",
+        "filter": ["**/*"]
+      }
+    ],
+    "linux": {
+      "target": "deb",
+      "category": "Utility",
+      "icon": "build/icons"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "build/icons/icon.png"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/icons/icon.png",
+      "extraResources": [
+        {
+          "from": "./my-safe-file.exe",
+          "to": "my-safe-file.exe"
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0",
+    "electron-vite": "^2.3.0",
+    "vite": "^5.4.0"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

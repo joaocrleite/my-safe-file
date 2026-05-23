@@ -1,0 +1,57 @@
+.wrapper {
+  flex: 1;
+  overflow-y: auto;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+
+.wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+.editor {
+  width: 100%;
+  max-width: 760px;
+  min-height: 100%;
+  padding: 48px 32px;
+  outline: none;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text);
+  caret-color: var(--accent);
+}
+
+.editor:empty::before {
+  content: attr(data-placeholder);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+/* Heading styles inside the editor */
+.editor :global(h1) { font-size: 2em;   font-weight: 700; margin: 0.6em 0 0.3em; line-height: 1.3; }
+.editor :global(h2) { font-size: 1.5em; font-weight: 600; margin: 0.6em 0 0.3em; line-height: 1.3; }
+.editor :global(h3) { font-size: 1.2em; font-weight: 600; margin: 0.6em 0 0.3em; line-height: 1.3; }
+
+.editor :global(ul),
+.editor :global(ol) {
+  padding-left: 1.5em;
+  margin: 0.4em 0;
+}
+
+.editor :global(li) {
+  margin: 0.2em 0;
+}
+
+.editor :global(p) {
+  margin: 0.3em 0;
+}

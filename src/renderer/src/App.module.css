@@ -1,0 +1,64 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.titleBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
+  height: 42px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  -webkit-app-region: drag;
+  user-select: none;
+}
+
+.logo {
+  font-size: 16px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--accent);
+  letter-spacing: 0.5px;
+}
+
+.filename {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.statusBar {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 0 16px;
+  height: 28px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  user-select: none;
+  overflow: hidden;
+}
+
+.filepath {
+  margin-left: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  direction: rtl;
+}
+
+.error {
+  margin-left: auto;
+  color: var(--danger);
+  font-size: 12px;
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="256" fill="#0f1117"/>
+
+  <!-- Outer ring -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#7c6af7" stroke-width="12"/>
+
+  <!-- Vault door circle -->
+  <circle cx="256" cy="256" r="160" fill="#1a1d27" stroke="#7c6af7" stroke-width="8"/>
+
+  <!-- Vault cross bars -->
+  <line x1="256" y1="96"  x2="256" y2="416" stroke="#7c6af7" stroke-width="8" stroke-linecap="round" opacity="0.4"/>
+  <line x1="96"  y1="256" x2="416" y2="256" stroke="#7c6af7" stroke-width="8" stroke-linecap="round" opacity="0.4"/>
+  <line x1="143" y1="143" x2="369" y2="369" stroke="#7c6af7" stroke-width="8" stroke-linecap="round" opacity="0.4"/>
+  <line x1="369" y1="143" x2="143" y2="369" stroke="#7c6af7" stroke-width="8" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Handle -->
+  <circle cx="256" cy="256" r="44" fill="#7c6af7"/>
+  <circle cx="256" cy="256" r="28" fill="#0f1117"/>
+  <circle cx="256" cy="256" r="14" fill="#7c6af7"/>
+
+  <!-- Vault handle bar -->
+  <rect x="282" y="248" width="52" height="16" rx="8" fill="#9585f9"/>
+
+  <!-- Hinge top -->
+  <rect x="88" y="148" width="20" height="36" rx="10" fill="#7c6af7"/>
+  <!-- Hinge bottom -->
+  <rect x="88" y="328" width="20" height="36" rx="10" fill="#7c6af7"/>
+</svg>

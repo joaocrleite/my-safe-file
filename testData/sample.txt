@@ -1,0 +1,8 @@
+This is a sample file for testing my-safe-file encryption.
+
+It contains multiple lines,
+  some indentation,
+and special characters: !@#$%^&*()_+-=[]{}|;':",.<>?
+
+Números e acentos: ção, ã, é, ü, ñ
+Emoji: 🔐 🗝️ 🔒

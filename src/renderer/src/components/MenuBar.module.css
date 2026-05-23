@@ -1,0 +1,61 @@
+.menuBar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.btn {
+  height: 30px;
+  padding: 0 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text);
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, opacity 0.15s;
+}
+
+.btn:hover:not(:disabled) {
+  background: var(--surface-hover);
+  border-color: var(--accent);
+}
+
+.btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.save {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.save:hover:not(:disabled) {
+  background: var(--accent);
+  color: #fff;
+}
+
+.password {
+  color: var(--text-muted);
+}
+
+.password:hover:not(:disabled) {
+  color: var(--text);
+  border-color: var(--text-muted);
+}
+
+.close {
+  margin-left: auto;
+  color: var(--text-muted);
+}
+
+.close:hover:not(:disabled) {
+  color: var(--danger);
+  border-color: var(--danger);
+  background: transparent;
+}

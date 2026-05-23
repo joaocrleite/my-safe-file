@@ -1,0 +1,19 @@
+# Go
+my-safe-file
+my-safe-file.exe
+
+# JS / Node
+node_modules/
+
+# Build outputs
+out/
+dist/
+
+# Generated icons (keep SVG source, ignore PNGs)
+build/icons/*.png
+
+# Temp / OS
+*.tmp
+.DS_Store
+Thumbs.db
+testVaultData
