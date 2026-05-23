@@ -38,6 +38,9 @@
       "category": "Utility",
       "icon": "build/icons"
     },
+    "deb": {
+      "afterInstall": "build/scripts/postinstall.sh"
+    },
     "mac": {
       "target": "dmg",
       "icon": "build/icons/icon.png"
